@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 配置视口  视频会随着窗口缩小而缩小 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>阴阳师首页哈</title>
+    <link rel="shortcut icon" href="icon/1.ico" />
+    <!--引入bootstrsp的CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--引入自己写的CSS-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+    <!--引入JQ-->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        *{ margin:0; padding:0; font-family:"Microsoft yahei",serif;}
+        li{ list-style-type: none;}
+
+
+    </style>
+</head>
+<body>
+<!--[if lt IE 9]>
+<div style="position:relative;z-index:99;width:100%;height:50px;background:#ffffe9;color:#1e5494;border-bottom:1px solid #e6e6c6;text-align:center;line-height:50px;font-size:12px;">您使用的浏览器版本过低，可能会影响到您浏览本网页，建议您升级您的浏览器。</div>
+<![endif]-->
+<div id="main">
+    <!--头部-->
+    <div class="header">
+        <div class="con-container">
+            <div class="containers content">
+                <a href="http://game.163.com/" target="_blank" class="zuo fll"><img src="images/00-header/wangyilogo.png" width="133" height="44" /></a>
+                <div class="zhong fll">
+                    <img src="images/00-header/myworld3.jpg" width="420" height="58" class="imgg1"/>
+                    <a href="https://mc.163.com/pe/"  target="_blank" class="imgg2">
+                        <img src="images/00-header/myworld4.jpg" width="960" height="250" />
+                    </a>
+                </div>
+
+
+                <ul class="nav nav-tabs fll">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="http://zc.reg.163.com/regInitialized" target="_blank">注册帐号</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="http://ecard.163.com/script/index" target="_blank">网易充值</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <!--<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="http://you.163.com/act/pub/EkKn0UZsrR.html?from=web_rk_game_wz_0" target="_blank" role="button" aria-haspopup="true" aria-expanded="false">网易游戏全目录-->
+                        <a class="nav-link dropdown-toggle">网易游戏全目录
+                            <!--<em>-->
+                            <!--<i  class="sanjiao"></i>-->
+                            <!--</em>-->
+                        </a>
+                        <div class="drop-menu">
+                            <img src="images/00-header/nav.png" width="1001" height="475"/>
+                        </div>
+                    </li>
+                    <li class="nav-item zhuan">
+                        <ul id="banner">
+                            <li> <a class="nav-link  hou" href="#">安卓充值9.8折</a></li>
+                            <li> <a class="nav-link  hou" href="#">领取网易严选宝箱</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+
+    </div>
+    <!--首屏  header start-->
+    <div id="head">
+        <!--右上角导航栏-->
+        <div id="nav">
+            <!--主导航-->
+            <ul class="mainList">
+                <li class="mNav"><a href="index.html">官网首页</a></li>
+                <li class="line"></li>
+                <li class="mNav"><a href="#">新闻资讯</a></li>
+                <li class="line"></li>
+                <li class="mNav"><a href="#">游戏攻略</a></li>
+                <li class="line"></li>
+                <li class="mNav"><a href="#">游戏特色</a></li>
+                <li class="line"></li>
+                <li class="mNav">
+                    <a href="#">同人专区</a>
+                    <div class="hide">
+                        <ul class="hideList">
+                            <li class="mHideLi">
+                                <a href=""><i class="i1"></i><p>玩家COS</p></a>
+                            </li>
+                            <li class="border"></li>
+                            <li class="mHideLi">
+                                <a href=""><i class="i2"></i><p>同人绘画</p></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <sapn class="arrow"></sapn>
+                </li>
+                <li class="line"></li>
+                <li class="mNav">
+                    <a href="#">官方渠道</a>
+                    <div class="hide">
+                        <ul class="hideList">
+                            <li class="mHideLi">
+                                <a href=""><i class="i3"></i><p>官方微博</p></a>
+                            </li>
+                            <li class="border"></li>
+                            <li class="mHideLi">
+                                <a href=""><i class="i4"></i><p>官方微信</p></a>
+                            </li>
+                            <li class="border"></li>
+                            <li class="mHideLi">
+                                <a href=""><i class="i4"></i><p>官方微信</p></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <sapn class="arrow"></sapn>
+
+                </li>
+            </ul>
+            <!--logo1-->
+            <div class="logo clearfix">
+                <div class="qrcode">
+                    <p>扫描下载</p>
+                    <img src="images/qrcode.png" alt="">
+                </div>
+                <div class="mLogo">
+                    <span class="img"></span>
+                    <p class="p1">阴阳师</p>
+                    <p class="p2">网易和风匠心巨制</p>
+                </div>
+            </div>
+        </div>
+        <!--logo2-->
+        <div class="logo2">
+        </div>
+        <!--role-->
+        <div id="role" onselectstart="return false">
+            <div class="rol1">
+                <p class="role role1 hide"></p>
+                <p class="role role2 hide"></p>
+            </div>
+            <div class="rol2">
+                <p class="role role3 hide"></p>
+                <p class="role role4 hide"></p>
+            </div>
+            <p class="btn"></p>
+            <img class='bottomImg' src="images/index-01-role/role_botbg.png" alt="">
+            <!--server-->
+            <div id="server">
+                <img src="images/index-01-role/bunny.gif" alt="">
+            </div>
+        </div>
+        <!--服务器列表弹窗层-->
+        <div id="serverList">
+            <div class="main">
+                <span class="close"></span>
+                <div class="topImg"></div>
+                <p class="titlenav">公平运营声明</p>
+                <div class="botImg"></div>
+                <!--列表四个模块-->
+                <div id="serverListNav">
+                    <div class="list1 fll">
+                        <b class="china">中国区-los</b>
+                        <i class="zheng"></i>
+                        <ul class="nav1">
+                            <li class="li1">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li1">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li1">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li1">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list1 fll">
+                        <b class="china">网易-双平台</b>
+                        <i class="zheng"></i>
+                        <ul class="nav1">
+                            <li class="li1">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li1">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li1">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li1">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list1 fll">
+                        <b class="china">中国-安卓联运</b>
+                        <i class="zheng"></i>
+                        <ul class="nav1">
+                            <li class="li1">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li1">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu baoman"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class=" xinfu baoman"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li1">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li1">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list1 fll">
+                        <b class="china">联运-双平台</b>
+                        <i class="zheng"></i>
+                        <ul class="nav1">
+                            <li class="li1">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li1">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li1">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li1">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                            <li class="li2">
+                                <a href=""></a>
+                                <i class="xinfu"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--首屏  header end-->
+
+    <!--slide start-->
+    <div id="slide">
+
+        <p class="title"></p>
+        <span class="arrow"></span>
+
+        <!--下载横向伸缩区-->
+        <div class="download stretch">
+            <p class="shrink"></p>
+            <div class="downloadMain">
+                <span class="close"></span>
+                <p class="bg1"></p>
+                <div class="qrcode">
+                    <img class="qr" src="images/qrcode.png" width="210" height="210" alt="">
+                    <img class="line" src="images/index-02-rili/line.png" width="106" height="9" alt="">
+                </div>
+                <div class="downLink">
+                    <a href="" class="ios"></a>
+                    <a href="" class="android"></a>
+                </div>
+            </div>
+        </div>
+
+        <!--游戏日历主内容-->
+        <div class="main">
+            <ul>
+                <li class="mainLi l1 left">
+                    <div class="show">协同斗技,每周六日14:00-15:30斗技</div>
+                    <div class="hide">
+                        <p class="hide">周一至周五  11:00-13:00,20:00-22:00</p>
+                        <p class="hide">周一至周五  11:00-13:00,20:00-22:00</p>
+                    </div>
+                </li>
+                <li class="mainLi l2 right">
+
+                </li>
+                <li class="mainLi l3 left"></li>
+                <li class="mainLi l4 right"></li>
+                <li class="mainLi l5 left"></li>
+                <li class="mainLi l6 right"></li>
+                <li class="mainLi l7 left"></li>
+                <li class="mainLi l8 right"></li>
+                <li class="mainLi l9 left"></li>
+            </ul>
+        </div>
+
+    </div>
+    <!--slide end-->
+    <!--新闻content区-->
+    <div id="content">
+        <!--新闻和banner部分-->
+        <div id="news">
+            <!--banner部分-->
+            <div class="banner">
+                <div class="pic">
+                    <ul>
+                        <li><a href=""><img src="images/index-03-content/1.jpg" alt=""></a></li>
+                        <li><a href=""><img src="images/index-03-content/2.jpg" alt=""></a></li>
+                        <li><a href=""><img src="images/index-03-content/3.jpg" alt=""></a></li>
+                        <li><a href=""><img src="images/index-03-content/4.jpg" alt=""></a></li>
+                        <li><a href=""><img src="images/index-03-content/5.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="tab">
+                    <ul>
+                        <li class="on"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <!--公告部分-->
+            <div class="inform">
+                <div class="tab">
+                    <ul class="clearfix">
+                        <li class="l1 on"><a href=""><i></i><span></span></a></li>
+                        <li class="l2"><a href=""><i></i><span></span><b></b></a></li>
+                        <li class="l3"><a href=""><i></i><span></span><b></b></a></li>
+                        <li class="l4"><a href=""><i></i><span></span><b></b></a></li>
+                        <li class="l5"><a href=""><i></i><span></span><b></b></a></li>
+                    </ul>
+                </div>
+                <div class="show">
+                    <ul class="wrapUl">
+                        <li class="new wrapLi">
+                            <!--<ul class="list">-->
+                            <!--<li>-->
+                            <!--<p><a href="">-【最新】 《阴阳师》×bilibili举办式神歌舞同欢会 妖约现世盛夏"</a></p>-->
+                            <!--<span>2017-06-13</span>-->
+                            <!--</li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--</ul>-->
+                        </li>
+                        <li class="news wrapLi ">
+                            <!--<ul class="list">-->
+                            <!--<li>-->
+                            <!--<p><a href="">-【新闻】 《阴阳师》×bilibili举办式神歌舞同欢会 妖约现世盛夏"</a></p>-->
+                            <!--<span>2017-06-13</span>-->
+                            <!--</li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--</ul>-->
+                        </li>
+                        <li class="active wrapLi ">
+                            <!--<ul class="list">-->
+                            <!--<li>-->
+                            <!--<p><a href="">-【公告】 《阴阳师》×bilibili举办式神歌舞同欢会 妖约现世盛夏"</a></p>-->
+                            <!--<span>2017-06-13</span>-->
+                            <!--</li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--</ul>-->
+                        </li>
+                        <li class="notice wrapLi ">
+                            <!--<ul class="list">-->
+                            <!--<li>-->
+                            <!--<p><a href="">-【活动】 《阴阳师》×bilibili举办式神歌舞同欢会 妖约现世盛夏"</a></p>-->
+                            <!--<span>2017-06-13</span>-->
+                            <!--</li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--</ul>-->
+                        </li>
+                        <li class="media wrapLi">
+                            <!--<ul class="list">-->
+                            <!--<li>-->
+                            <!--<p><a href="">-【媒体】 《阴阳师》×bilibili举办式神歌舞同欢会 妖约现世盛夏"</a></p>-->
+                            <!--<span>2017-06-13</span>-->
+                            <!--</li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--</ul>-->
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!--式神列表-->
+    <div id="character">
+        <div class="sMain">
+            <!--平安之旅 式神 主角-->
+            <div class="title">
+                <span class="bg1 fll"></span>
+                <span class="dotted fll"></span>
+                <p class="tab fll active">
+                    <i></i>
+                    <span class="tab1"></span>
+                </p>
+                <span class="dotted fll"></span>
+                <p class="tab fll"><i></i><span class="tab2"></span></p>
+
+            </div>
+            <!--对应的显示-->
+            <div class="showMain">
+                <ul class="mList">
+                    <li class="mLi shishenList">
+                        <div class="shishenTab">
+                            <ul>
+                                <li class="clickBtn on">全部</li>
+                                <li class="clickBtn">SSR</li>
+                                <li class="clickBtn">SR</li>
+                                <li class="clickBtn">SR</li>
+                                <li class="clickBtn">N</li>
+                                <li class="allBtn"><a href=""><img src="images/index-04/viewAll_btn.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="mainList">
+                            <div class="mUl show">
+                                <ul class="ALL">
+
+
+                                    <!--<li class="ssList">-->
+                                    <!--<div class="shishen">-->
+                                    <!--<img src="images/index-04-shishen/201.png" alt="">-->
+                                    <!--<p class="cover"><span>雪女</span></p>-->
+                                    <!--<i class="new"></i>-->
+                                    <!--</div>-->
+                                    <!--<div class="shishen">-->
+                                    <!--<img src="images/index-04-shishen/201.png" alt="">-->
+                                    <!--</div>-->
+                                    <!--</li>-->
+
+
+                                </ul>
+                                <p class="btn left"></p>
+                                <p class="btn right"></p>
+                            </div>
+                            <div class="mUl">
+                                <ul class="SSR">
+                                </ul>
+                                <p class="btn left"></p>
+                                <p class="btn right"></p>
+                            </div>
+                            <div class="mUl">
+                                <ul class="SR">
+                                </ul>
+                                <p class="btn left"></p>
+                                <p class="btn right"></p>
+                            </div>
+                            <div class="mUl">
+                                <ul class="R">
+                                </ul>
+                                <p class="btn left"></p>
+                                <p class="btn right"></p>
+                            </div>
+                            <div class="mUl">
+                                <ul class="N">
+                                </ul>
+                                <p class="btn left"></p>
+                                <p class="btn right"></p>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="mLi zhujueList" style="display:none">
+                        <div class="tab">
+                            <ul>
+                                <li class="active">晴明 <i></i></li>
+                                <li>神乐<i></i></li>
+                                <li>源博雅<i></i></li>
+                                <li>八百比丘尼<i></i></li>
+                            </ul>
+                        </div>
+                        <div class="pic">
+                            <ul>
+                                <li class="qm show" style="display: block">
+                                    <div class="img"><img src="images/index-04/zhujue_qingming.png" alt=""></div>
+                                    <div class="dec">
+                                        <p class="index"></p>
+                                        <p class="name">晴明</p>
+                                        <p class="info">
+                                            京都城中极具盛名的天才阴阳师 <br>
+                                            却不知为何失去了自己的记忆 <br>
+                                            等待着他的是寻回记忆的喜悦 <br>
+                                            还是不堪回首的残忍真相
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="sl">
+                                    <div class="img"><img src="images/index-04/zhujue_shenle.png" alt=""></div>
+                                    <div class="dec">
+                                        <p class="index"></p>
+                                        <p class="name">神乐</p>
+                                        <p class="info">善良而沉默的神秘少女 <br>
+                                            失忆后便跟随在晴明身边<br>
+                                            拥有敏锐的直觉和强大的通灵能力<br>
+                                            以及不为人知的过去</p>
+                                    </div>
+                                </li>
+                                <li class="yby">
+                                    <div class="img"><img src="images/index-04/zhujue_yby.png" alt=""></div>
+                                    <div class="dec">
+                                        <p class="index"></p>
+                                        <p class="name">源博雅</p>
+                                        <p class="info">拥有皇室血统的贵族青年 <br>
+                                            擅长弓术与结界之术 <br>
+                                            性情孤傲爽直 <br>
+                                            但似乎一直在寻找某个重要的人
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="bqn">
+                                    <div class="img"><img src="images/index-04/zhujue_bqn.png" alt=""></div>
+                                    <div class="dec">
+                                        <p class="index"></p>
+                                        <p class="name">八宝比丘尼</p>
+                                        <p class="info">因误食人鱼肉而不老不死 <br>
+                                            能力超凡的流浪占卜师<br>
+                                            一直在凤凰林中等待着<br>
+                                            占卜之梦预言的命运之人</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--式神end-->
+    <!--新闻content区 end-->
+
+    <!--strategy start 攻略部分-->
+    <div id="strategy">
+        <div class="leftPart">
+            <!--搜索框-->
+            <div class="search">
+                <div class="sInp"><input type="text" placeholder="请输入问题"></div>
+                <div class="sBtn"></div>
+            </div>
+            <div class="bMain">
+                <!--banner-->
+                <div class="banner">
+                    <div class="pic">
+                        <ul>
+                            <li><a href="javascript:void(0)"></a><img src="images/index-05-strategy/banner1.jpg" alt=""></li>
+                            <li><a href="javascript:void(0)"></a><img src="images/index-05-strategy/banner2.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="tab">
+                        <ul>
+                            <li class="on"></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--navLink-->
+                <div class="navLink">
+                    <ul>
+                        <li class="l1"><a href="javascript:void(0)"><span></span><i></i></a></li>
+                        <li class="l2"><a href="javascript:void(0)"><span></span><i></i></a></li>
+                        <li class="l3"><a href="javascript:void(0)"><span></span><i></i></a></li>
+                        <li class="l4"><a href="javascript:void(0)"><span></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="rightPart">
+            <div class="title">
+                <span class="tab bg1"></span>
+                <span class="dotted"></span>
+                <p class="tab">
+                    <i></i>
+                    <span class="tab1"></span>
+                </p>
+                <span class="dotted"></span>
+                <p class="tab">
+                    <i></i>
+                    <span class="tab2"></span>
+                </p>
+                <span class="dotted"></span>
+                <p class="tab">
+                    <i></i>
+                    <span class="tab3"></span>
+                </p>
+                <span class="dotted"></span>
+                <p class="tab">
+                    <i></i>
+                    <span class="tab4"></span>
+                </p>
+            </div>
+            <div class="mContent">
+                <div class="show">
+                    <ul>
+                        <!--<li>-->
+                            <!--<a href="javascript:void(0)">-->
+                                <!--<i></i>-->
+                                <!--<p class="mTitle">【<span class="type">御魂111</span>】&nbsp;逆转的胜利！反击流式神阵容推荐！</p>-->
+                                <!--<p class="author">作者：<span>迷子</span></p>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                    </ul>
+                    <ul>
+                        <!--<li>-->
+                            <!--<a href="javascript:void(0)">-->
+                                <!--<i></i>-->
+                                <!--<p class="mTitle">【<span class="type">222</span>】&nbsp;逆转的胜利！反击流式神阵容推荐！</p>-->
+                                <!--<p class="author">作者：<span>迷子</span></p>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                    </ul>
+                    <ul>
+                        <!--<li>-->
+                            <!--<a href="javascript:void(0)">-->
+                                <!--<i></i>-->
+                                <!--<p class="mTitle">【<span class="type">333</span>】&nbsp;逆转的胜利！反击流式神阵容推荐！</p>-->
+                                <!--<p class="author">作者：<span>迷子</span></p>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                    </ul>
+                    <ul>
+                        <!--<li>-->
+                            <!--<a href="javascript:void(0)">-->
+                                <!--<i></i>-->
+                                <!--<p class="mTitle">【<span class="type">444</span>】&nbsp;逆转的胜利！反击流式神阵容推荐！</p>-->
+                                <!--<p class="author">作者：<span>迷子</span></p>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                    </ul>
+                    <ul>
+                        <!--<li>-->
+                            <!--<a href="javascript:void(0)">-->
+                                <!--<i></i>-->
+                                <!--<p class="mTitle">【<span class="type">555</span>】&nbsp;逆转的胜利！反击流式神阵容推荐！</p>-->
+                                <!--<p class="author">作者：<span>迷子</span></p>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--strategy end-->
+    <!--fan start-->
+    <div id="fan">
+        <div class="tab">
+            <div class="img"></div>
+            <div class="tabNav">
+                <p class="line"></p>
+                <ul>
+                    <li class="l1 on"><span>精选推荐</span><i></i></li>
+                    <li class="l2"><span>同人绘画</span><i></i></li>
+                    <li class="l3"><span>玩家COS</span><i></i></li>
+                    <li class="l4"><span>同人视频</span><i></i></li>
+                    <li class="l5"><span>同人小说</span><i></i></li>
+                    <li class="l6"><span>高手在民间</span><i></i></li>
+                </ul>
+            </div>
+            <a href="javascript:void(0)" class="goLink"></a>
+        </div>
+        <div class="mFan">
+            <div class="show">
+                <!--<li>
+                    <div class="pic">
+                        <img src="img/index/fan/jxtj/1.jpg" alt="">
+                        <span><b></b></span>
+                    </div>
+                    <p class="sTitle">妖刀姬cos【作者】@押切YAKI</p>
+                </li>-->
+            </div>
+        </div>
+    </div>
+    <!--fan end-->
+    <!--video start-->
+    <div id="video">
+        <div class="vMain">
+            <div class="leftVideo box">
+                <ul>
+                    <li class="first">
+                        <i></i>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <img src="images/index-07-video/1.jpg" alt="">
+                        </div>
+                        <p class="dec">《阴阳师》核心玩法</p>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <img src="images/index-07-video/2.jpg" alt="">
+                        </div>
+                        <p class="dec">《阴阳师》声优阵容</p>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <img src="images/index-07-video/3.jpg" alt="">
+                        </div>
+                        <p class="dec">【阴阳师X极乐净土】抽式神不如跳舞</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="rightWallpaper box">
+                <ul>
+                    <li class="first">
+                        <i></i>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <img src="images/index-07-video/4.jpg" alt="">
+                        </div>
+                        <p class="dec">游戏场景原画</p>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <img src="images/index-07-video/5.jpg" alt="">
+                        </div>
+                        <p class="dec">游戏场景原画</p>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <img src="images/index-07-video/6.jpg" alt="">
+                        </div>
+                        <p class="dec">游戏角色原画</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--video end-->
+
+    <!--activity start-->
+    <div id="activity">
+        <div class="left">
+            <img src="images/index-08-activity/activity_title.png" alt="">
+        </div>
+        <div class="right">
+            <ul>
+                <li>
+                    <img src="images/index-08-activity/1.png" alt="">
+                    <p class="dec">“浮妖百态”式神设计大赛火热投稿中</p>
+                </li>
+                <li>
+                    <img src="images/index-08-activity/2.jpg" alt="">
+                    <p class="dec">农夫山泉“舔瓶我崽”揭盖有奖</p>
+                </li>
+                <li>
+                    <img src="images/index-08-activity/3.jpg" alt="">
+                    <p class="dec">KFC跨界应援开启！</p>
+                </li>
+                <li>
+                    <img src="images/index-08-activity/4.jpg" alt="">
+                    <p class="dec">贴吧活动：地表最萌告白开启</p>
+                </li>
+                <li>
+                    <img src="images/index-08-activity/5.jpg" alt="">
+                    <p class="dec">大触觉醒第二季！同人插画大赛</p>
+                </li>
+                <li>
+                    <img src="images/index-08-activity/6.jpg" alt="">
+                    <p class="dec">天机谱：有奖攻略互动计划</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--activity end-->
+
+    <!--contact start-->
+    <div id="contact">
+        <ul>
+            <li class="l1">
+                <a href="javascript:void(0)"><img src="images/logo.png" alt=""></a>
+            </li>
+            <li class="l2 qrd">
+                <p class="p1">关注官方微博</p>
+                <p class="p2">扫描二维码</p>
+                <p class="p3">官方微博</p>
+                <p class="p4"><span></span>微博名：<a href="javascript:void(0)">网易阴阳师手游</a></p>
+                <div class="img"><img src="images/wb.png" alt=""></div>
+            </li>
+            <li class="l3 qrd">
+                <p class="p1">关注微信公众号</p>
+                <p class="p2">扫描二维码</p>
+                <p class="p3">微信公众号</p>
+                <p class="p4">微博名：<a>yinyangshi163</a></p>
+                <div class="img"><img src="images/wx.jpg" alt=""></div>
+            </li>
+            <li class="l4">
+                <i></i>
+                <p class="p1">客户服务电话</p>
+                <p class="p2">0571-26201179</p>
+                <p class="p4"><span></span><a href="javascript:void(0)">问题反馈</a> <a href="javascript:void(0)">精灵咨询</a> </p>
+            </li>
+        </ul>
+        <div class="goTop"></div>
+    </div>
+    <!--contact end-->
+
+    <!--footer start-->
+    <div id="footer">
+        <p class="p1"></p>
+        <div class="hover">
+            <p class="p2"></p>
+            <p class="p3"></p>
+            <p class="p4"></p>
+            <div class="qrd">
+                <div class="pic"><img src="images/qrcode.png" alt=""></div>
+                <div class="txt"></div>
+            </div>
+        </div>
+    </div>
+    <!--footer end-->
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!--svg-->
+<!--<svg></svg>-->
+<!-- jquery-->
+
+
+<script src="js/jquery-3.3.1.js"></script>
+<!--bootsstrap-->
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--自己写的JS-->
+<!--<script src="https://cdn.bootcss.com/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>-->
+<script src="js/jquery.mousewheel.js"></script>
+
+<script src="js/data.js"></script>
+<script src="js/shishenData.js"></script>
+<script src="js/strateData.js"></script>
+<script src="js/fanData.js"></script>
+<script src="js/index.js"></script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

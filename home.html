@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- 配置视口  视频会随着窗口缩小而缩小 -->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+        <title>阴阳师首页哈</title>
+        <link rel="shortcut icon" href="icon/1.ico" />
+        <!--引入bootstrsp的CSS-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!--引入自己写的CSS-->
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+        <style>
+            *{ margin:0; padding:0; font-family:"Microsoft yahei",serif;}
+            li{ list-style-type: none;}
+
+
+        </style>
+    </head>
+    <body>
+    <!--[if lt IE 9]>
+    <div style="position:relative;z-index:99;width:100%;height:50px;background:#ffffe9;color:#1e5494;border-bottom:1px solid #e6e6c6;text-align:center;line-height:50px;font-size:12px;">您使用的浏览器版本过低，可能会影响到您浏览本网页，建议您升级您的浏览器。</div>
+    <![endif]-->
+    <!--头部-->
+    <div class="header">
+        <div class="con-container">
+            <div class="containers content">
+                <a href="http://game.163.com/" target="_blank" class="zuo fll"><img src="images/00-header/wangyilogo.png" width="133" height="44" /></a>
+                <div class="zhong fll">
+                    <img src="images/00-header/myworld3.jpg" width="420" height="58" class="imgg1"/>
+                    <a href="https://mc.163.com/pe/"  target="_blank" class="imgg2">
+                        <img src="images/00-header/myworld4.jpg" width="960" height="250" />
+                    </a>
+                </div>
+
+
+                <ul class="nav nav-tabs fll">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="http://zc.reg.163.com/regInitialized" target="_blank">注册帐号</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="http://ecard.163.com/script/index" target="_blank">网易充值</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="http://you.163.com/act/pub/EkKn0UZsrR.html?from=web_rk_game_wz_0" target="_blank" role="button" aria-haspopup="true" aria-expanded="false">网易游戏全目录
+                            <em>
+                                <i  class="sanjiao"></i>
+                            </em>
+                        </a>
+                        <div class="drop-menu">
+                            <img src="images/00-header/nav.png" width="1001" height="475"/>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <ul id="banner">
+                            <li> <a class="nav-link  hou" href="#">安卓充值9.8折</a></li>
+                            <li> <a class="nav-link  hou" href="#">领取网易严选宝箱</a></li>
+
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+
+    </div>
+    <!--首页背景-->
+    <div id="bg">
+        <!--背景1-->
+        <div class="bg1 bg">
+            <embed src="video/yys_xsjj.swf" width="100%" height="1020" type="application/x-shockwave-flash">
+            <!--<object data="https://nie.res.netease.com/nie/flash/2017MobileGames/yys/0519/yys_xsjj.swf?a=9" type="application/x-shockwave-flash" id="flash_641895589" width="100%" height="1026">-->
+                <!--<param name="allowScriptAccess" value="always">-->
+                <!--<param name="wmode" value="transparent">-->
+                <!--<param name="movie" value="https://nie.res.netease.com/nie/flash/2017MobileGames/yys/0519/yys_xsjj.swf?a=9">-->
+        </div>
+        <!--背景2-->
+        <div class="bg bg2"></div>
+        <!--背景3-->
+        <div class="bg bg3"></div>
+    </div>
+    <!--首屏-->
+    <div id="wrap">
+        <!--划入显示部分-->
+        <div class="wswiper">
+            <!--logo的划入-->
+            <div id="logo" class="swp swp1">
+                <a href="index.html" target="_blank">
+                    <img src="images/01-beijing/logo1.png" class="img1" width="35" height="115" alt="logo"/>
+                    <img src="images/01-beijing/logo.webp" class="img2" width="108" height="108" alt="logo"/>
+                </a>
+            </div>
+            <!--进入官网的提示-->
+            <div class="swp swp2">
+                <a href="index.html" target="_blank"></a>
+            </div>
+            <!--现世集结-->
+            <div class="swp swp3">
+            </div>
+            <!--扫一扫-->
+            <div class="swp swp4">
+                <p>扫一扫，下载游戏</p>
+                <div class="qrcode fll">
+                    <img src="images/01-beijing/line.png" width="148" height="10" class="line"/>
+                </div>
+                <div class="download flr">
+                    <a href="#"><img src="images/01-beijing/downios.png" /></a>
+                    <a href="#"><img src="images/01-beijing/downand.png" /></a>
+
+                </div>
+            </div>
+        </div>
+        <!--首页视频-->
+        <div class="videoBtn">
+            <img src="images/01-beijing/videoBtnAR.png" />
+        </div>
+        <!--视频弹窗-->
+        <div class="video">
+            <div id="video" class="video-box">
+                <video controls='controls' src="video/ssr.mp4"></video>
+                <span class="close"></span>
+                <!--<video autoplay='true' poster='video/bg1.jpg' src="video/ssr.mp4.mp4"></video>-->
+            </div>
+        </div>
+        <!--鼠标提示-->
+        <div class="mouse"></div>
+    </div>
+    <!--新版本情报-->
+    <div id="newinfo">
+        <!--主内容-->
+        <div class="main">
+            <p class="title hide"></p>
+            <div class="infolist">
+                <ul>
+                    <li class="l1 hide">
+                        <i class="i1"></i>
+                        <i class="i2"></i>
+                        <i class="i3"></i>
+                        <i class="i4"></i>
+                    </li>
+                    <li class="l2 hide"><i class="i1"></i><i class="i2"></i><i class="i3"></i><i class="i4"></i></li>
+                    <li class="l3 hide"><i class="i1"></i><i class="i2"></i><i class="i3"></i><i class="i4"></i></li>
+                    <li class="l4 hide"><i class="i1"></i><i class="i2"></i><i class="i3"></i><i class="i4"></i></li>
+                    <li class="l5 hide"><i class="i1"></i><i class="i2"></i><i class="i3"></i><i class="i4"></i></li>
+                    <li class="l6 hide"><i class="i1"></i><i class="i2"></i><i class="i3"></i><i class="i4"></i></li>
+                </ul>
+            </div>
+        </div>
+        <!--弹窗层-->
+        <div class="popwindow">
+            <div class="content">
+                <ul>
+                    <li style="background:url('images/02-newinfo/ren1.png')">
+                        <div class="txt">
+                            <div class="mainTxt">
+                                <p class="boldRed">现世集结！逢魔寻妖，跨服斗技1。</p>
+                                <p class="boldRed">逢魔之时开启</p>
+                                <p class="boldBlack">玩法介绍</p>
+                                <p class="normal">全新跨区玩法【逢魔之时】即将到来！15级及以上的阴阳师大人，可以在每天黄昏阴阳交界之时,前往【町中】-【逢魔之时】使用灵视观察周围环境,并发现藏身于自己身边的妖怪。在现世探索中各位阴阳师大人，可能会发现密信、宝箱，还有可能发现附着在他人身上的式神！</p>
+                                <p class="normal">此外，还有概率发现稀有的跨区集结BOSS【土蜘蛛】！全新BOSS将会出现在LBS地图上，范围内的附近玩家可以直接参与（跨区），也可以邀请其他不在附近的好友、寮友共同参与。 </p>
+                                <p class="normal">集结·BOSS战斗中采用全新的场景模式，阴阳师大人可以看到当前的战况，以及并肩作战的其他阴阳师们的情况。奖励也很丰厚哦！</p>
+                                <p class="boldBlack">活动时间</p>
+                                <p class="normal mBottom">5月20日更新维护后每日17:00-20:00 </p>
+                                <p class="boldRed">跨服好友全服开启 </p>
+                                <p class="boldBlack">玩法介绍</p>
+                                <p class="normal">跨区好友全面来袭，架起友谊之桥！</p>
+                                <p class="normal">全服开放跨区好友功能，跨区好友也可以聊天和切磋了。 </p>
+                                <p class="boldBlack">活动时间</p>
+                                <p class="normal mBottom">5月20日更新维护后 </p>
+                                <p class="boldRed">集结之境修习模式全服开启</p>
+                                <p class="boldBlack">玩法介绍</p>
+                                <p class="normal">全新的跨区玩法——修习模式在全部服务器开放，服务器斗技达到2段以上可以参与跨区竞技，该模式下使用全新的战前选人方式，以及全新的积分系统，阴阳师大人可以充分展示自己的实力，获得世界排名。</p>
+                                <p class="boldBlack">活动时间</p>
+                                <p class="normal mBottom">5月20日更新维护后，每日11：00-12：00，20：00-21：00</p>
+                                <p class="boldRed">全新地图呈现唯美平安京</p>
+                                <p class="boldBlack">玩法介绍</p>
+                                <p class="normal">新增LBS地图3D化，将地图视角拉近后，可以看到平安风格的新地图效果。</p>
+                                <p class="normal">本次LBS地图更新，采用与实际地图对应的方式，在现有地图的基础上，全面还原一个真实的平安世界，各位阴阳师大人快看看自己熟悉的建筑在平安世界变成了什么样子吧~</p>
+                                <p class="boldBlack">活动时间</p>
+                                <p class="normal">5月20日更新维护后</p>
+                                <p class="normal">温馨提示，需要将客户端升至1.0.20以上，并将地图镜头拉近，即可观赏到新平安风格地图。</p>
+                            </div>
+                            <div class="scroll">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background:url('images/02-newinfo/ren2.png')">
+                        <div class="txt">
+                            <div class="mainTxt">
+                                <p class="boldRed">亲友回归福利，全平台新区再集结2。</p>
+                                <p class="boldRed">重聚京都——呼朋唤友，回流福利</p>
+                                <p class="normal">非活跃玩家（5月12日0:00后未登录过游戏，且5月12日0:00前等级≥15级）活动期间登录游戏，即可获得丰厚的回流礼包。</p>
+                                <p class="normal">非活跃玩家活动期间登录游戏，填写活跃好友（等级≥15级）的游戏ID，即可形成绑定关系。</p>
+                                <p class="normal">如果没有符合条件的活跃好友，也可以选择与其他活跃玩家形成好友关系后进行绑定。</p>
+                                <p class="normal">形成绑定后，与绑定的玩家组队完成指定任务，双方还可以获得丰厚的每日奖励（金币、勾玉、御魂加成、美食结界卡等）。</p>
+                                <p class="normal">具体规则详见庭院左侧灯笼架「重聚京都」。</p>
+                                <p class="boldBlack">活动时间</p>
+                                <p class="normal mBottom">5月20日更新维护后-5月26日</p>
+                                <p class="boldRed">全平台新区再集结</p>
+                                <p class="boldBlack">活动内容</p>
+                                <p class="normal">全平台新区「深情厚谊」开启，iOS、网易安卓、渠道安卓用户皆可进入，更有新区集结奖励可以领取。</p>
+                                <p class="boldBlack">开服时间</p>
+                                <p class="normal">5月20日10:00</p>
+                            </div>
+                            <!--滚动条区块-->
+                            <div class="scroll">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background:url('images/02-newinfo/ren3.png')">
+                        <div class="txt">
+                            <div class="mainTxt">
+                                <p class="boldRed">亲友回归福利，全平台新区再集结。</p>
+                                <p class="boldRed">重聚京都——呼朋唤友，回流福利</p>
+                                <p class="normal">非活跃玩家（5月12日0:00后未登录过游戏，且5月12日0:00前等级≥15级）活动期间登录游戏，即可获得丰厚的回流礼包。</p>
+                                <p class="normal">非活跃玩家活动期间登录游戏，填写活跃好友（等级≥15级）的游戏ID，即可形成绑定关系。</p>
+                                <p class="normal">如果没有符合条件的活跃好友，也可以选择与其他活跃玩家形成好友关系后进行绑定。</p>
+                                <p class="normal">形成绑定后，与绑定的玩家组队完成指定任务，双方还可以获得丰厚的每日奖励（金币、勾玉、御魂加成、美食结界卡等）。</p>
+                                <p class="normal">具体规则详见庭院左侧灯笼架「重聚京都」。</p>
+                                <p class="boldBlack">活动时间</p>
+                                <p class="normal mBottom">5月20日更新维护后-5月26日</p>
+                                <p class="boldRed">全平台新区再集结</p>
+                                <p class="boldBlack">活动内容</p>
+                                <p class="normal">全平台新区「深情厚谊」开启，iOS、网易安卓、渠道安卓用户皆可进入，更有新区集结奖励可以领取。</p>
+                                <p class="boldBlack">开服时间</p>
+                                <p class="normal">5月20日10:00</p>
+                            </div>
+                            <!--滚动条区块-->
+                            <div class="scroll">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background:url('images/02-newinfo/ren4.png')">
+                        <div class="txt">
+                            <div class="mainTxt">
+                                <p class="boldRed">亲友回归福利，全平台新区再集结。</p>
+                                <p class="boldRed">重聚京都——呼朋唤友，回流福利</p>
+                                <p class="normal">非活跃玩家（5月12日0:00后未登录过游戏，且5月12日0:00前等级≥15级）活动期间登录游戏，即可获得丰厚的回流礼包。</p>
+                                <p class="normal">非活跃玩家活动期间登录游戏，填写活跃好友（等级≥15级）的游戏ID，即可形成绑定关系。</p>
+                                <p class="normal">如果没有符合条件的活跃好友，也可以选择与其他活跃玩家形成好友关系后进行绑定。</p>
+                                <p class="normal">形成绑定后，与绑定的玩家组队完成指定任务，双方还可以获得丰厚的每日奖励（金币、勾玉、御魂加成、美食结界卡等）。</p>
+                                <p class="normal">具体规则详见庭院左侧灯笼架「重聚京都」。</p>
+                                <p class="boldBlack">活动时间</p>
+                                <p class="normal mBottom">5月20日更新维护后-5月26日</p>
+                                <p class="boldRed">全平台新区再集结</p>
+                                <p class="boldBlack">活动内容</p>
+                                <p class="normal">全平台新区「深情厚谊」开启，iOS、网易安卓、渠道安卓用户皆可进入，更有新区集结奖励可以领取。</p>
+                                <p class="boldBlack">开服时间</p>
+                                <p class="normal">5月20日10:00</p>
+                            </div>
+                            <!--滚动条区块-->
+                            <div class="scroll">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background:url('images/02-newinfo/ren5.png')">
+                        <div class="txt">
+                            <div class="mainTxt">
+                                <p class="boldRed">亲友回归福利，全平台新区再集结。</p>
+                                <p class="boldRed">重聚京都——呼朋唤友，回流福利</p>
+                                <p class="normal">非活跃玩家（5月12日0:00后未登录过游戏，且5月12日0:00前等级≥15级）活动期间登录游戏，即可获得丰厚的回流礼包。</p>
+                                <p class="normal">非活跃玩家活动期间登录游戏，填写活跃好友（等级≥15级）的游戏ID，即可形成绑定关系。</p>
+                                <p class="normal">如果没有符合条件的活跃好友，也可以选择与其他活跃玩家形成好友关系后进行绑定。</p>
+                                <p class="normal">形成绑定后，与绑定的玩家组队完成指定任务，双方还可以获得丰厚的每日奖励（金币、勾玉、御魂加成、美食结界卡等）。</p>
+                                <p class="normal">具体规则详见庭院左侧灯笼架「重聚京都」。</p>
+                                <p class="boldBlack">活动时间</p>
+                                <p class="normal mBottom">5月20日更新维护后-5月26日</p>
+                                <p class="boldRed">全平台新区再集结</p>
+                                <p class="boldBlack">活动内容</p>
+                                <p class="normal">全平台新区「深情厚谊」开启，iOS、网易安卓、渠道安卓用户皆可进入，更有新区集结奖励可以领取。</p>
+                                <p class="boldBlack">开服时间</p>
+                                <p class="normal">5月20日10:00</p>
+                            </div>
+                            <!--滚动条区块-->
+                            <div class="scroll">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background:url('images/02-newinfo/ren6.png')">
+                        <div class="txt">
+                            <div class="mainTxt">
+                                <p class="boldRed">亲友回归福利，全平台新区再集结。</p>
+                                <p class="boldRed">重聚京都——呼朋唤友，回流福利</p>
+                                <p class="normal">非活跃玩家（5月12日0:00后未登录过游戏，且5月12日0:00前等级≥15级）活动期间登录游戏，即可获得丰厚的回流礼包。</p>
+                                <p class="normal">非活跃玩家活动期间登录游戏，填写活跃好友（等级≥15级）的游戏ID，即可形成绑定关系。</p>
+                                <p class="normal">如果没有符合条件的活跃好友，也可以选择与其他活跃玩家形成好友关系后进行绑定。</p>
+                                <p class="normal">形成绑定后，与绑定的玩家组队完成指定任务，双方还可以获得丰厚的每日奖励（金币、勾玉、御魂加成、美食结界卡等）。</p>
+                                <p class="normal">具体规则详见庭院左侧灯笼架「重聚京都」。</p>
+                                <p class="boldBlack">活动时间</p>
+                                <p class="normal mBottom">5月20日更新维护后-5月26日</p>
+                                <p class="boldRed">全平台新区再集结</p>
+                                <p class="boldBlack">活动内容</p>
+                                <p class="normal">全平台新区「深情厚谊」开启，iOS、网易安卓、渠道安卓用户皆可进入，更有新区集结奖励可以领取。</p>
+                                <p class="boldBlack">开服时间</p>
+                                <p class="normal">5月20日10:00</p>
+                            </div>
+                            <!--滚动条区块-->
+                            <div class="scroll">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <span class="close"></span>
+                <div class="btn left"></div>
+                <div class="btn right"></div>
+            </div>
+        </div>
+    </div>
+    <!--游戏特色-->
+    <div id="game">
+        <div class="main">
+            <p class="title hide"></p>
+            <div class="banner">
+                <div class="pic">
+                    <ul>
+                        <li class="mid">
+                            <img src="images/03-game/bannerimg1.jpg"/>
+
+                                <i class="i1"></i>
+                                <i class="i2"></i>
+                                <i class="i3"></i>
+                                <i class="i4"></i>
+
+                        </li>
+                        <li class="right"><img src="images/03-game/bannerimg2.jpg"/>
+                            <i class="i1"></i>
+                            <i class="i2"></i>
+                            <i class="i3"></i>
+                            <i class="i4"></i>
+                        </li>
+                        <li>
+                            <img src="images/03-game/bannerimg3.jpg"/>
+                            <i class="i1"></i>
+                            <i class="i2"></i>
+                            <i class="i3"></i>
+                            <i class="i4"></i>
+                        </li>
+                        <li><img src="images/03-game/bannerimg4.jpg"/>
+                            <i class="i1"></i>
+                            <i class="i2"></i>
+                            <i class="i3"></i>
+                            <i class="i4"></i>
+                        </li>
+                        <li class="left f5">><img src="images/03-game/bannerimg5.jpg"/>
+                            <i class="i1"></i>
+                            <i class="i2"></i>
+                            <i class="i3"></i>
+                            <i class="i4"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <span class="left"></span>
+                    <span class="right"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footer">
+        <ul class="top">
+            <li>分享到</li>
+            <li><i class="iconfont icon-weixin"></i>微信</li>
+            <li><i class="iconfont icon-yixin"></i>易信</li>
+            <li><i class="iconfont icon-weibo"></i>新浪微博</li>
+            <li><i class="iconfont icon-tengxunweibo"></i>资讯微博</li>
+            <li><i class="iconfont icon-kongjian"></i>QQ空间</li>
+            <li><i class="iconfont icon-tengxunweibo"></i>腾讯微博</li>
+            <li><i class="iconfont icon-gengduo"></i>更多</li>
+        </ul>
+        <div class="button">
+            <div class="nav-wrap">
+                <div class="logo clearfix">
+                    <div class="left fll">
+                        <a href="" class="logo1"></a>
+                        <a href="" class="logo2"></a>
+                    </div>
+                    <div class="right flr">
+                        <p>
+                            <a href="">公司简介</a>-
+                            <a href="">客户服务</a>-
+                            <a href="">用户协议</a>-
+                            <a href="">网易游戏 </a>-
+                            <a href="">联系我们</a>-
+                            <a href="">商务合作 </a>-
+                            <a href=""> 加入我们</a>-
+                            <a href=""> 用户协议</a>
+                         </p>
+                        <span class="banquan">网易公司版权所有 ©1997-2018</span>
+                        <a href="http://www.leihuo.net/jiazhang.html" target="_blank" class="parents">点击查看家长监护工程</a>
+                    </div>
+
+                </div>
+                <div class="promise">
+                    <p>本游戏适合16岁以上的玩家进入。</p>
+                    <p>积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。</p><br/>
+                    <p><a href="">《网络游戏管理暂行办法》</a> 文网游备字【2016】M-RPG4708号 《网络文化经营许可证》 浙网文[2016]0155-055号 批准文号：新广出审【2017】6710号 </p><br/>
+                    <p>出版物号：ISBN 978-7-7979-9973-1</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <!--svg-->
+        <!--<svg></svg>-->
+        <!-- jquery-->
+
+
+       <script src="js/jquery-3.3.1.js"></script>
+        <!--bootsstrap-->
+        <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!--自己写的JS-->
+    <!--<script src="https://cdn.bootcss.com/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>-->
+    <script src="js/jquery.mousewheel.js"></script>
+        <script src="js/home.js"></script>
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,996 @@
+﻿
+
+/*====公共类开始====*/
+body,html{
+    background: #fff;
+	font-family:"Microsoft yahei",serif;
+}
+body{
+    font:14px/1.5 'Microsoft YaHei';
+    letter-spacing: 2px;
+    z-index: -10;
+
+}
+body.noScroll{
+    overflow: hidden;
+    height: 100%;
+}
+.clearfix:after {
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+.clearfix {
+    zoom:1; /* for IE6 IE7 */
+}
+.fll{
+    float: left;
+}
+.flr{
+    float: right;
+}
+
+.pos-r{
+    position: relative;
+}.pos-a{
+    position: absolute;
+}
+.pos-f{
+    position: fixed;
+}
+
+/*====公共类结束====*/
+body{
+    min-width:1280px;
+
+}
+
+.header{
+    display: fixed;
+    z-index: 5;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background: #FBFBFB;
+}
+.header .con-container{
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+}
+.header .containers{
+    height: 100%;
+    width: 1040px;
+    margin:auto;
+}
+.header .containers .zuo{
+    display: inline-block;
+    width: 133px;
+    height: 44px;
+    margin-top: 8px;
+}
+.header .containers .zhong{
+    position: relative;
+    display: inline-block;
+    width: 420px;
+    height: 60px;
+    margin-left: 12px;
+}
+.header .containers .zhong .imgg2{
+    position: absolute;
+    top: 60px;
+    left:-145px;
+    display: none;
+    z-index: 3;
+}
+.header .containers .zhong:hover .imgg2{
+    display: block;
+}
+.header .containers .zhong:hover .imgg1{
+    opacity:0;
+}
+
+.header .containers .nav-tabs{
+    font-size:12px;
+    margin-left: 60px;
+}
+.header .containers .nav-tabs .nav-item{
+    padding: 0 2px;
+}
+
+.header .containers  .nav-tabs  .nav-link{
+    border:none;
+    /*padding:0 5px;*/
+}
+.header .containers .nav-tabs .nav-item .nav-link{
+    display: inline-block;
+    padding: 0;
+    width: 70px;
+    height: 60px;
+    line-height:60px;
+    text-align: center;
+    transition:0.5s;
+    background: #FBFBFB;
+
+}
+.header .containers .nav-tabs .nav-item .dropdown-toggle{
+    width: 125px;
+    color: #BC2E2E;
+}
+.header .containers .nav-tabs .nav-item .nav-link:hover{
+    border-bottom:3px solid #BC2E2E;
+    color: #BC2E2E;
+    background:linear-gradient(180deg,#F3F3F3,#FBFBFB)
+}
+.header .containers .nav-tabs .nav-item .dropdown-toggle em{
+    position: relative;
+    display: inline-block;
+    /*z-index: 3;*/
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    background:#fff;
+}
+.header .containers .nav-tabs .nav-item .dropdown-toggle em i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 16px;
+    height:16px;
+    background:url('../images/00-header/png.png') no-repeat -100px -94px;
+}
+.header .containers .nav-tabs .nav-item{
+    position: relative;
+}
+.header .containers .nav-tabs .nav-item .drop-menu{
+    position: absolute;
+    /*display: none;*/
+    z-index:3;
+    top: 60px;
+    left: -772px;
+    transform-origin: top;  /*旋转中心*/
+    transform: rotateX(90deg);
+    transition: transform 1s,opacity 0.3s;
+    opacity:0;
+    cursor: pointer;
+
+}
+.header .containers .nav-tabs .dropdown:hover .drop-menu{
+    display: block;
+    opacity:1;
+    transform: rotateX(0deg);
+}
+
+.header .containers .nav-tabs .nav-item #banner{
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.header .containers .nav-tabs .nav-item #banner li{
+
+    width: 120px;
+    height: 60px;
+}
+.header .containers .nav-tabs .nav-item .hou{
+    width: 120px;
+    color: #000;
+}
+/*====背景====*/
+#bg{
+    position: absolute;
+    top:60px;
+    left: 0;
+    width: 100%;
+}
+#bg .bg{
+    width: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+#bg .bg1{
+    height: 1020px;
+    background-image: url("../images/01-beijing/bg1.jpg");
+}
+/*解决闪现的问题*/
+#bg .bg1 embed{
+    opacity: 0;
+}
+/*背景2*/
+#bg .bg2{
+
+    height: 1080px;
+    background-image: url("../images/02-newinfo/bg2.jpg");
+}
+#bg .bg3{
+    height: 534px;
+    background-image: url("../images/02-newinfo/bg3.jpg");
+}
+
+
+
+@media screen and (min-width:310px) and (max-width:850px){
+    body{
+        overflow-x: hidden;
+    }
+    .header {
+        /*display: none;*/
+
+        background: #000;
+
+    }
+    .header .con-container{
+        background: #000;
+        opacity:0;
+    }
+    #bg .bg1{
+        height: 540px;
+        background-image:url('../images/01-beijing/bg2.png');
+        background-position-y: -55px;
+    }
+    #bg .bg1 embed{
+        display: none;
+    }
+
+}
+
+
+
+
+/*首屏*/
+#wrap{
+    position: relative;
+    width: 100%;
+    height: 1020px;
+    /*overflow: hidden;*/
+}
+#wrap .wswiper #logo{
+    position: absolute;
+    opacity:0;
+    left: -300px;
+    width: 172px;
+    height: 180px;
+    padding:40px 0 0 30px;
+    /*border:2px solid #fff;*/
+
+}
+#wrap .wswiper #logo a{
+    display:block;
+    height: 100%;
+    width: 100%;
+    /*border:2px solid red;*/
+}
+#wrap .wswiper #logo a img{
+    display: inline-block;
+    float: left;
+}
+#wrap .wswiper #logo .img2{
+    width: 90px;
+    height: 90px;
+    border:2px solid #fff;
+    margin-left: 8px;
+    border-radius: 20px;
+}
+/*进入官网的提示*/
+#wrap .wswiper .swp2{
+    position: absolute;
+    right: -300px;
+    top: 30px;
+    opacity:0;
+    width: 177px;
+    height: 45px;
+    background: url('../images/01-beijing/goindex.png');
+}
+#wrap .wswiper .swp2 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius:20px;
+    transition: 0.3s;
+    background: rgba(0,0,0,.2);
+}
+#wrap .wswiper .swp2 a:hover{
+    background: rgba(0,0,0,0);
+}
+#wrap .wswiper .swp3{
+    /*z-index: 3;*/
+    position: absolute;
+    top: 500px;
+    right:40px;
+    width: 340px;
+    height: 521px;
+    background: url('../images/01-beijing/swp3.png');
+}
+#wrap .wswiper .swp4{
+    position: absolute;
+    top: 810px;
+    right: 135px;
+    width: 350px;
+    opacity:0;
+    height: 160px;
+}
+#wrap .wswiper .swp4 p{
+    color: #3d2672;
+    font-weight:bold;
+    font-size: 16px;
+}
+#wrap .wswiper .swp4 .qrcode{
+    float: left;
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border-radius: 8px;
+    background:rgba(255,255,255,0.5) url('../images/01-beijing/qrcode.png') no-repeat center center/120px 120px;
+}
+/*5-116   用keyframes*/
+#wrap .wswiper .swp4 .qrcode .line{
+    position: absolute;
+    left: -7px;
+    top: 5px;
+    width: 150px;
+    height:auto;
+    animation: nana 3s linear infinite;   /*调用动画名字，时间，运动曲线，运动次数*/
+}
+
+#wrap .wswiper .swp4 .download a img{
+    padding: 2px;
+}
+@keyframes nana {
+    0%{top:5px;}
+    50%{top:116px;}
+    100%{top:5px;}
+}
+
+/*向下鼠标提示*/
+#wrap .mouse{
+    position: absolute;
+    left: 50%;
+    bottom: 200px;
+    width: 30px;
+    height: 70px;
+    background:url('../images/02-newinfo/dBtn.png');
+    animation: goudan 2s linear infinite;
+}
+@keyframes goudan {
+    0%{bottom:200px;opacity: 1;}
+    /*50%{bottom:80px;opacity: 0;}*/
+    100%{bottom:80px;opacity: 0;}
+}
+
+
+
+#wrap .videoBtn{
+    position: absolute;
+    top: 380px;
+    right: 290px;
+    width: 165px;
+    height: 120px;
+    cursor: pointer;
+    background: url('../images/01-beijing/videoBtn.png');
+}
+#wrap .videoBtn img{
+    position: absolute;
+    top: 2px;
+    left:47px;
+}
+#wrap .video{
+    position: relative;
+    z-index:1;
+    display: none;
+    background: rgba(0,0,0,.8);
+    width: 100%;
+    height:100%;
+}
+#wrap #video{
+
+    overflow: hidden;
+
+}
+#wrap #video video{
+    /*display: none;*/
+    z-index:5;
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    border:2px solid #B69476;
+}
+#wrap #video .close ,#newinfo .popwindow .content  .close{
+    position: absolute;
+    top: 50px;
+    left: 1060px;
+    display: block;
+    width: 38px;
+    height: 38px;
+    z-index:5;
+    transform: rotate(0deg);
+    transition:0.3s;
+    cursor: pointer;
+    background: url('../images/01-beijing/close.png') no-repeat;
+}
+
+#wrap #video .close:hover{
+    transform: rotate(180deg);
+}
+#newinfo .popwindow .content  .close:hover{
+    transform: rotate(180deg);
+}
+
+@media screen and (min-width:310px) and (max-width:850px){
+    #wrap{
+        height: 540px;
+    }
+    #wrap .wswiper #logo{
+        position: absolute;
+        top: -90px;
+
+    }
+    #wrap .wswiper #logo .img1{
+        opacity:0;
+    }
+    #wrap .wswiper #logo .img2{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        left:20px;
+    }
+    #wrap .wswiper .swp2{
+        position: relative;
+        left:180px;
+        top: -39px;
+        opacity:1;
+        width: 120px;
+        height: 30px;
+        background: url('../images/01-beijing/goindex.png') no-repeat center/cover;
+    }
+    #wrap .wswiper .swp2 a{
+        position: absolute;
+
+    }
+    #wrap .wswiper .swp3{
+        position: absolute;
+        top: 50px;
+        left: 150px;
+        width:170px;
+        height: 260px;
+        background: url('../images/01-beijing/swp3.png') no-repeat center/cover;
+    }
+    #wrap .wswiper .swp4{
+        position: absolute;
+        display: block;
+        top: -300px;
+        left: 235px;
+        width: 350px;
+        height: 160px;
+
+    }
+    #wrap .wswiper .swp4 p {
+        position: absolute;
+        top: -145px;
+    }
+    #wrap .wswiper .swp4 .qrcode{
+        position: absolute;
+        top: -120px;
+
+    }
+
+    #wrap .wswiper .swp4 .download{
+        display: none;
+    }
+    #wrap .videoBtn{
+        display: none;
+    }
+    #wrap .mouse{
+        position: absolute;
+        left: 150px;
+        top: 400px;
+        width: 30px;
+        height: 70px;
+        background:url('../images/02-newinfo/dBtn.png');
+        animation: goudan 1s linear infinite;
+    }
+    @keyframes goudan {
+        0%{top:400px;opacity: 1;}
+        /*50%{bottom:80px;opacity: 0;}*/
+        100%{top: 450px;opacity: 0;}
+    }
+
+}
+/*新版本情报*/
+#newinfo{
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+#newinfo .main{
+    width: 1281px;
+    margin: 0 auto;
+
+}
+#newinfo .main p.title{
+    position: relative;
+    top:0;
+    opacity: 1;
+    height: 150px;
+    background:url('../images/02-newinfo/newinf.png') no-repeat center top;
+    transition: 1s;
+}
+#newinfo .main p.title.hide{
+    top: 80px;
+    opacity: 0;
+}
+/*6个图片，动态用css实现*/
+#newinfo .main .infolist ul li{
+    position: relative;
+    top: 0;
+    float: left;
+    opacity: 1;
+    width: 418px;
+    height: 213px;
+    margin:11px 4px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    -ms-background-position-y: 17px;
+    background-position-y: 17px;
+    transition: 0.5s;
+
+}
+#newinfo .main .infolist ul li.hide{
+    top: 80px;
+    opacity: 0;
+}
+#newinfo .main .infolist ul li:hover{
+    background-position-y: 0px;
+}
+#newinfo .main .infolist ul li.l1{
+    background-image: url('../images/02-newinfo/p1.png');
+}
+#newinfo .main .infolist ul li.l2{
+    background-image: url('../images/02-newinfo/p2.png');
+}
+#newinfo .main .infolist ul li.l3{
+    background-image: url('../images/02-newinfo/p3.png');
+}
+#newinfo .main .infolist ul li.l4{
+    background-image: url('../images/02-newinfo/p4.png');
+}
+#newinfo .main .infolist ul li.l5{
+    background-image: url('../images/02-newinfo/p5.png');
+}
+#newinfo .main .infolist ul li.l6{
+    background-image: url('../images/02-newinfo/p6.png');
+}
+#newinfo .main .infolist ul li i{
+    position: absolute;
+    background: #a57c47;
+
+}
+#newinfo .main .infolist ul li i.i1{
+    top: 9px;
+    left: 9px;
+}
+#newinfo .main .infolist ul li i.i2{
+    top: 9px;
+    right: 9px;
+}
+#newinfo .main .infolist ul li i.i3{
+    bottom: 24px;
+    right: 9px;
+}
+#newinfo .main .infolist ul li i.i4{
+    bottom: 24px;
+    left: 9px;
+}
+#newinfo .main .infolist ul li i.i1,#newinfo .main .infolist ul li i.i3{
+    width: 0px;
+    height: 2px;
+}
+#newinfo .main .infolist ul li i.i2,#newinfo .main .infolist ul li i.i4{
+    width: 2px;
+    height: 0px;
+}
+#newinfo .main .infolist ul li:hover .i1{
+    animation:i1 0.2s 0s linear 1;  /*第三个参数是指延迟*/
+}
+#newinfo .main .infolist ul li:hover .i2{
+    animation:i2 0.09s 0.2s linear 1 ;  /*第三个参数是指延迟*/
+}
+#newinfo .main .infolist ul li:hover .i3{
+    animation:i1 0.2s 0.29s linear 1 ;  /*第三个参数是指延迟*/
+}
+#newinfo .main .infolist ul li:hover .i4{
+    animation:i2 0.09s 0.49s linear 1 ;  /*第三个参数是指延迟*/
+}
+#newinfo .main .infolist ul li:hover i{
+    animation-fill-mode: forwards !important;  /*最后停在最后一帧*/
+
+}
+/*弹窗层*/
+#newinfo .popwindow{
+    /*display: none;*/
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,.5);
+}
+#newinfo .popwindow .content{
+    /*绝对居中*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 1180px;
+    height: 735px;
+    margin:auto;
+}
+#newinfo .popwindow .content ul li{
+    /*display: none;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin:-20px 0px 0px -70px;
+}
+#newinfo .popwindow .content  .close{
+    position: absolute;
+    top: 105px;
+    left: 1080px;
+}
+#newinfo .popwindow .content .txt{
+    position: relative;
+    width: 440px;
+    height: 315px;
+    margin: 210px 0 0 550px;
+    font-style:normal;
+    font-size: 16px;
+    overflow: hidden;
+}
+#newinfo .popwindow .content .txt .mainTxt{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 410px;
+    line-height: 35px;
+}
+#newinfo .popwindow .content .txt .boldRed{
+    color: #E5402A;
+    font-weight: bold;
+}
+#newinfo .popwindow .content .txt .mBottom{
+    margin-bottom: 40px;
+}
+#newinfo .popwindow .content .txt .boldBlack{
+    color: #000;
+    font-weight: bold;
+}
+/*滚动条*/
+#newinfo .popwindow .content .txt .scroll {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    height: 100%;
+    width: 8px;
+    background: #e2e2e2;
+}
+#newinfo .popwindow .content .txt .scroll .bar{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 100%;
+    background: #000;
+    cursor: pointer;
+    /*height: 2px;*/
+}
+#newinfo .popwindow .content .txt:hover .scroll{
+    display: block;
+}
+#newinfo .popwindow .content .btn{
+    position: absolute;
+    top: 50%;
+    width: 46px;
+    height: 18px;
+}
+#newinfo .popwindow .content .left{
+    left: 0;
+    background: url('../images/02-newinfo/toleft.png') no-repeat;
+}
+#newinfo .popwindow .content .right{
+    right: 0;
+    background: url('../images/02-newinfo/toright.png') no-repeat;
+}
+#newinfo .popwindow .content .left:hover{
+    animation:btnmoveleft 1.5s linear infinite;
+}
+#newinfo .popwindow .content .right:hover{
+    animation:btnmoveright 1.5s linear infinite;
+}
+/*游戏特色*/
+
+#game .main{
+    position: relative;
+    width: 1130px;
+    height: 650px;
+    margin:100px auto 0;
+
+}
+#game .main p.title{
+    position: relative;
+    width: 800px;
+    height: 150px;
+    background:url('../images/03-game/game_title.png') no-repeat center top;
+    margin:auto;
+
+}
+#game .main .banner .pic{
+    position: relative;
+    width: 935px;
+    height: 439px;
+    margin:auto;
+    transform-style: preserve-3d;
+    perspective: 800px;
+}
+
+
+/*#game .main .banner .pic ul{*/
+    /*width: 774px;*/
+    /*height: 438px;*/
+    /*perspective: 800px;*/
+/*}*/
+
+
+#game .main .banner .pic ul li{
+    position: absolute;
+    top: 0;
+    left: 80px;
+    background: #000;
+    /*transform : rotateY(0deg) translate3D(0px,0px,0px);*/
+    transform:translate3D(0px,0px,-233px) rotateY(0deg) ;
+    transition:transform .5s;
+    cursor: pointer;
+}
+#game .main .banner .pic ul li img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+#game .main .banner .pic ul li.mid img{
+    opacity: 1;
+}
+/*左中右三个图图片的样式*/
+#game .main .banner .pic ul li.left{
+    /*先旋转后位移*/
+    /*transform : rotateY(30deg) translate3D(-17px,0,-313px);*/
+
+    transform:translate3D(-196px,0px,-302px) rotateY(30deg);
+    z-index: 2;
+}
+#game .main .banner .pic ul li.mid{
+    /*transform : rotateY(0deg) translate3D(0px,0px,0px);*/
+    transform:translate3D(0,0,0) rotateY(0deg);
+    z-index: 3;
+}
+#game .main .banner .pic ul li.f5 img{
+    margin-top: -21px;
+    z-index: 1;
+}
+
+#game .main .banner .pic ul li.right{
+    /*transform:translate3D(148px,-27px,-370px) rotateY(-30deg);*/
+    transform:translate3D(196px,0px,-302px) rotateY(-30deg);
+}
+
+/*#game .main .banner .btn{*/
+ /**/
+/*}*/
+#game .main .banner .btn span{
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 42px;
+    height: 82px;
+}
+#game .main .banner .btn .left{
+    left: 0;
+    background:url("../images/03-game/left.png");
+}
+#game .main .banner .btn .right{
+    right: 0;
+    background:url("../images/03-game/right.png");
+}
+/*游戏特色动画*/
+#game .main .banner .pic ul li i{
+    position: absolute;
+    background: #a57c47;
+}
+#game .main .banner .pic ul li .i1{
+    top: 30px;
+    left: 30px;
+}
+#game .main .banner .pic ul li .i2{
+    top: 30px;
+    left: 746px;
+}
+#game .main .banner .pic ul li .i3{
+    top: 409px;
+    right: 30px;
+}
+#game .main .banner .pic ul li .i4{
+    top: 30px;
+    left: 30px;
+}
+#game .main .banner .pic ul li .i1,#game .main .banner .pic ul li .i3{
+    height: 2px;
+    /*width: 716px;*/
+    width: 0;
+}
+#game .main .banner .pic ul li .i2,#game .main .banner .pic ul li .i4{
+    /*height: 381px;*/
+    height: 0;
+    width: 2px;
+}
+#game .main .banner .pic ul li:hover .i1{
+    animation:i3 0.2s 0s linear 1;  /*第三个参数是指延迟*/
+}
+
+#game .main .banner .pic ul li:hover .i2{
+    animation:i4 0.09s 0.2s linear 1 ;  /*第三个参数是指延迟*/
+}
+#game .main .banner .pic ul li:hover .i3{
+    animation:i3 0.2s 0.29s linear 1 ;  /*第三个参数是指延迟*/
+}
+#game .main .banner .pic ul li:hover .i4{
+    animation:i4 0.09s 0.49s linear 1 ;  /*第三个参数是指延迟*/
+}
+#game .main .banner .pic ul li:hover i{
+    animation-fill-mode: forwards !important;  /*最后停在最后一帧*/
+
+}
+
+/*i1 i3的动画*/
+@keyframes i1{
+    0%{  width: 0;}
+    100%{  width: 400px;}
+}
+/*i2 i4的动画*/
+@keyframes i2{
+    0%{  height: 0;}
+    100%{ height: 180px;}
+}
+/*i1 i3的动画*/
+@keyframes i3{
+    0%{  width: 0;}
+    100%{  width: 716px;}
+}
+/*i2 i4的动画*/
+@keyframes i4{
+    0%{  height: 0;}
+    100%{ height: 381px;}
+}
+/*newinfo弹窗层的左右浮动动画*/
+@keyframes btnmoveleft{
+    0%{  left: 0;}
+    50%{  left: -10px;}
+    100%{  left: 0;}
+}
+@keyframes btnmoveright{
+    0%{  right: 0;}
+    50%{  right: -10px;}
+    100%{  right: 0;}
+}
+
+
+@media screen and (min-width:310px) and (max-width:850px){
+
+    #newinfo .main p.title{
+        margin-top: 10px;
+        margin-left: 80px;
+        width: 200px;
+        height: 38px;
+        background:url('../images/02-newinfo/newinf.png') no-repeat center/cover;
+    }
+    #newinfo .main .infolist ul li{
+        float: none;
+        margin:10px 50px;
+    }
+
+    #newinfo .popwindow .content{
+        width: 550px;
+        height: 360px;
+    }
+}
+/*尾部*/
+.footer{
+    position: relative;
+    color: #666667;
+
+}
+.footer ul{
+    display: flex;
+    width: 710px;
+    margin:auto;
+    margin-bottom:30px;
+
+}
+.footer ul li{
+    font-style: 16px;
+    margin:0 10px;
+    cursor: pointer;
+}
+.footer ul li i{
+    display: inline-block;
+    /*font-size: 12px;*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*color:#000;*/
+    text-align: center;
+    line-height: 20px;
+    /*background:#666667;*/
+    border-radius: 50%;
+
+}
+.footer ul li:hover{
+    color:#C9B27C;
+}
+.footer .button{
+    /*padding: 15px 0;*/
+    height: 220px;
+    width: 100%;
+    background: #171020;
+    font-size: 12px;
+}
+.footer .button .nav-wrap{
+    display: block;
+    width:860px;
+    height: 100%;
+    /*border:2px solid red;*/
+    margin:auto;
+}
+.footer .button .nav-wrap .logo{
+    padding-top: 15px;
+}
+.footer .button .nav-wrap .logo .left a{
+    display: inline-block;
+    height: 36px;
+}
+.footer .button .nav-wrap .logo .left .logo1{
+    width: 118px;
+    background:url('../images/04-footer/logo1.png') no-repeat;
+}
+.footer .button .nav-wrap .logo .left .logo2{
+    width: 110px;
+    background:url('../images/04-footer/logo2.png') no-repeat center/cover;
+
+}
+.footer .button .nav-wrap a{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    color: #666667;
+}
+.footer .button .nav-wrap .logo .right p{
+    margin-right: 20px;
+}
+.footer .button .nav-wrap .logo .right .parents{
+    height: 30px;
+    width: 150px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    background: #610000;
+    margin-left: 60px;
+}
+.footer .button .nav-wrap .promise p{
+    height: 25px;
+    line-height: 25px;
+}
